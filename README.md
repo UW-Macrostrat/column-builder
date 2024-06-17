@@ -54,7 +54,7 @@ You can run scripts without password prompts if you set the PGPASSWORD for gunni
 
 **IF** (you have a local_forward for gunnison set up)
 
-In `/database/bin` you will find a script called `dump-burwell` that is designed to get the schema and data of the `column_data` db on gunnison and apply the alterations and views. From the root directory run `database/bin/dump-burwell -h` to view the flag options and their defaults. Unless you have changed the docker-compose container names, then the only option that matters is `-p` the port of the gunnison db on your local device (i.e a local forward). The defualt port is `54381`, but if you had the db configured to `5432` the command would be `database/bin/dump-burwell -p 5432`. **NOTE**: In order for this to work, you need to be running the application (`docker-compose up`).
+In `/database/bin` you will find a script called `dump-burwell` that is designed to get the schema and data of the `column_data` db on gunnison and apply the alterations and views. From the root directory run `database/bin/dump-burwell -h` to view the flag options and their defaults. Unless you have changed the docker-compose container names, then the only option that matters is `-p` the port of the gunnison db on your local device (i.e a local forward). The default port is `54381`, but if you had the db configured to `5432` the command would be `database/bin/dump-burwell -p 5432`. **NOTE**: In order for this to work, you need to be running the application (`docker-compose up`).
 
 **ELSE**
 
